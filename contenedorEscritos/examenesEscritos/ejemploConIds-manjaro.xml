@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<examen>
+  <periodo>Agosto 2017 - Enero 2018</periodo>
+  <tipo>Parcial 2</tipo>
+  <carrera>Ingeniería de Software</carrera>
+  <universidad>Universidad Veracruzana</universidad>
+
+  <seccion puntaje="2" tipo="subrayar">
+    <instruccion>
+      Subraye la respuesta correcta.  
+    </instruccion>
+    <incisos>
+      
+      <inciso correcto="c" id="1">
+	<texto>
+	  Científico británico al que se le adjudica la creación de WWW:
+	</texto>
+	<opciones>
+	  <opcion id="a">Alan Turing</opcion>
+	  <opcion id="b">Bertrand Russel</opcion>
+	  <opcion id="c">Berners Lee</opcion>
+	  <opcion id="d">Alonso Church</opcion>
+	</opciones>
+      </inciso>
+
+      <inciso correcto="c" id="2">
+	<texto>
+	  Científico británico al que se le adjudica la creación de WWW:
+	</texto>
+	<opciones>
+	  <opcion id="a">Alan Turing</opcion>
+	  <opcion id="b">Bertrand Russel</opcion>
+	  <opcion id="c">Berners Lee</opcion>
+	  <opcion id="d">Alonso Church</opcion>
+	</opciones>
+      </inciso>
+      
+    </incisos>
+  </seccion>
+
+  <seccion puntaje="1" tipo="relacionar">
+    <instruccion>
+      Relaciona las columnas.
+    </instruccion>
+
+    <incisos>
+      
+      <inciso correcto="d" id="3">
+	<texto>
+	  Protocolo de telecomunicación que define los procedimientos y reglas para transferir datos por Internet.
+	  Provee una entrega y control de paquetes de información consistente
+	</texto>
+      </inciso>
+
+      <inciso correcto="a" id="4">
+	<texto>
+	  Es un lenguaje de etiquetado muy simple, pero estricto que juega un papel fundamental en el intercambio de una gran variedad de datos. Es un lenguaje muy similar a HTML pero su función principal es describir datos y no mostrarlos.
+	</texto>
+      </inciso>
+
+      <inciso correcto="g" id="5">
+	<texto>
+	  Tradicionalmente se encarga de la ejecución de código JavaScript.
+	</texto>
+      </inciso>
+
+      <inciso correcto="j" id="6">
+	<texto>
+	  Es un conjunto de reglas normalizadas que describen los requisitos que deben ser cumplidos por un producto, proceso o servicio, con el objetivo de establecer un mecanismo base para permitir que distintos elementos hardware o software que lo utilicen, sean compatibles entre sí.
+	</texto>
+      </inciso>
+
+      <inciso correcto="b" id="7">
+	<texto>
+	  Es un modelo de diseño de software en el que las tareas se reparten entre los proveedores de recursos o servicios llamados servidores, y los demandantes, llamados clientes.
+	</texto>
+      </inciso>
+
+      <inciso correcto="c" id="8">
+	<texto>
+	  Su función más importante es "resolver" nombres de dominio en identificadores binarios asociados con los equipos conectados a la red, esto con el propósito de poder localizar y direccionar estos equipos mundialmente.
+	</texto>
+      </inciso>
+
+      <inciso correcto="i" id="9">
+	<texto>
+	  Servicio que le permite a los sistemas Web contar con persistencia de datos
+	</texto>
+      </inciso>
+
+      <inciso correcto="e" id="10">
+	<texto>
+	  Describe un conjunto de guías generales de diseño e implementación de protocolos de red específicos para permitir que un equipo pueda comunicarse en una red.
+	</texto>
+      </inciso>
+
+      <inciso correcto="f" id="11">
+	<texto>
+	  Contiene metadatos que se envían en una petición o respuesta HTTP y contiene información importante de la operación.
+	</texto>
+      </inciso>
+
+      <inciso correcto="h" id="12">
+	<texto>
+	  Es un tipo de MIME.
+	</texto>
+      </inciso>
+
+      <inciso correcto="q" id="13">
+	<texto>
+	  Es un ejemplo de servidor Web.
+	</texto>
+      </inciso>
+
+      <inciso correcto="s" id="14">
+	<texto>
+	  Es el consorcio central de estándares Web.
+	</texto>
+      </inciso>
+
+      <inciso correcto="k" id="15">
+	<texto>
+	  Computadora que almacena los archivos que componen un sitio Web (Documentos HTML, imágenes, Hojas de estilo CSS, archivos javascript) y los entrega al dispositivo del usuario final. Se encuentra conectado a Internet y puede ser accedido a través de un nombre de dominio.
+	</texto>
+      </inciso>
+
+      <inciso correcto="r" id="16">
+	<texto>
+	  Es un ataque automatizado de prueba y error, donde el atacante intenta ingresar a múltiples sistemas usando contraseñas o claves criptográficas simples para ingresar a los datos del usuario.
+	</texto>
+      </inciso>
+
+      <inciso correcto="m" id="17">
+	<texto>
+	  Tecnología que permite definir y organizar la estructura y contenido de una página Web
+	</texto>
+      </inciso>
+
+      <inciso correcto="l" id="18">
+	<texto>
+	  Conjunto de reglas de comunicación entre dos computadoras.
+	</texto>
+      </inciso>
+
+      <inciso correcto="n" id="19">
+	<texto>
+	  En el contexto de la pila de desarrollo Web, es la parte donde se encuentra la interfaz de usuario.
+	</texto>
+      </inciso>
+
+      <inciso correcto="t" id="20">
+	<texto>
+	  Este tipo de ataque tiene como objetivo dejar a un servicio o recurso de la red totalmente inaccesible a los usuarios legítimos.
+	</texto>
+      </inciso>
+
+      <inciso correcto="p" id="21">
+	<texto>
+	  Es una metodología de desarrollo de sistemas Web basada en el proceso unificado y UML pero adaptados a la web.
+	</texto>
+      </inciso>
+
+      <inciso correcto="o" id="22">
+	<texto>
+	  Incluye varios componentes que controlan la forma en la que los usuarios Web acceden a los archivos alojados. Es una pieza de software que entiende URLs.
+	</texto>
+      </inciso>
+      
+    </incisos>
+
+    <opciones>
+      <opcion id="a">eXtensible Markup Language</opcion>
+      <opcion id="b">Modelo Cliente/Servidor</opcion>
+      <opcion id="c">DNS. Sistema de Nombres de Dominio.</opcion>
+      <opcion id="d">TCP/IP Transfer Control Protocol / Internet Protocol</opcion>
+      <opcion id="e">Arquitectura TCP/IP</opcion>
+      <opcion id="f">Cabecera HTTP</opcion>
+      <opcion id="g">Navegador Web</opcion>
+      <opcion id="h">image/jpeg</opcion>
+      <opcion id="i">Manejador de bases de datos</opcion>
+      <opcion id="j">Estándar</opcion>
+      <opcion id="k">Servidor Web (Hardware)</opcion>
+      <opcion id="l">Protocolo</opcion>
+      <opcion id="m">HTML</opcion>
+      <opcion id="n">Front-end</opcion>
+      <opcion id="o">Servidor Web (Software)</opcion>
+      <opcion id="p">UML-Based Web Engineering</opcion>
+      <opcion id="q">Apache</opcion>
+      <opcion id="r">Ataques de fuerza bruta</opcion>
+      <opcion id="s">W3C</opcion>
+      <opcion id="t">Denegación de servicio</opcion>
+    </opciones>
+
+    
+  </seccion>
+
+  
+  <seccion puntaje="2" tipo="verdadero_falso">
+    <instruccion>
+      De las siguientes afirmaciones, marque con una palomita aquellas que sean verdaderas.
+    </instruccion>
+
+    <incisos>
+      <inciso correcto="false" id="23">
+	<texto>
+	  Alonso Church fue el creador de Lisp.
+	</texto>
+      </inciso>
+    </incisos>
+  </seccion>
+
+  <seccion puntaje="4" tipo="abiertas">
+    <instruccion>
+      Responde a los siguientes cuestionamientos de forma detallada.
+    </instruccion>
+
+    <incisos>
+      <inciso id="24">
+	<texto>
+	  Menciona las fases de compilación en orden
+	</texto>
+      </inciso>
+    </incisos>
+  </seccion>
+
+  <seccion tipo="misc">
+    <instruccion>
+      Analiza la siguiente problemática y responde lo que se te pide. Sube un único archivo comprimido con la respuesta de cada punto.
+    </instruccion>
+    <texto>
+      Se plantea realizar un sistema para llevar el control de ventas, proveedores e inventario de una dulcería. El sistema tendrá un sólo usuario que se encargará de toda la administración y para ello desea contar con una interfaz gráfica de uso. El cliente plantea que al inicio el sistema deberá correr en Linux pero que más tarde planea cambiar su sistema por Windows.
+    </texto>
+    <incisos>
+      <inciso puntaje="7" id="25">
+	<texto>Propón un diagrama de paquetes (nivel 2) con sus relaciones</texto>
+      </inciso>
+      <inciso puntaje="8" id="26">
+	<texto>
+	  Propón un diagrama de clases de nivel 3 
+	</texto>
+      </inciso>
+    </incisos>
+  </seccion>
+
+  <seccion tipo="analisis">
+    <instruccion>
+      Analiza el siguiente fragmento de código Java.
+    </instruccion>
+    <texto/>
+    <recursos>
+      <imagen src="/static/images/java.jpg">
+      </imagen>
+    </recursos>
+    <incisos>
+      <inciso puntaje="5" id="27">
+	<texto>Di algo del código java</texto>
+      </inciso>
+    </incisos>
+  </seccion>
+</examen>

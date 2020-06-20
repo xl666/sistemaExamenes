@@ -1,0 +1,3 @@
+
+
+select sum(Alumnos_Ejercicios.puntosObtenidos) as puntos, Examenes.idExamen, Alumnos.nombre  from Alumnos_Ejercicios join Alumnos join Ejercicios join Examenes where Alumnos.idAlumno = Alumnos_Ejercicios.Alumnos_idAlumno and Alumnos_Ejercicios.Ejercicios_idEjercicios = Ejercicios.idEjercicios and Ejercicios.Examenes_idExamen = Examenes.idExamen and Examenes.idExamen = X  group by Alumnos_Ejercicios.Alumnos_idAlumno;

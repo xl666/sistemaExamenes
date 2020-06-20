@@ -1,0 +1,23 @@
+
+
+
+{% for op in opciones %}
+
+
+<div class="row">
+    <div class="col-sm-4"></div>
+  <div class="col-sm-2">
+    <label for="verdadero">
+      <strong>{{ op.texto }}</strong>
+    </label>
+  </div>
+  <div class="col-sm-1">
+    <input class="form-control" type="radio" name="respuesta" value="{{ op.id }}" {% if forloop.first %} checked {% endif %}>
+  </div>
+  <div class="col-sm-5"></div>
+</div>
+
+{% endfor %}
+
+
+

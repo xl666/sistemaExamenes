@@ -1,0 +1,24 @@
+
+
+{% for rec in recursos%}
+
+{% ifequal rec.tipo "imagen" %}
+<div class="row">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-10">
+    <img class="imgGal" src="{{ rec.src }}" />
+  </div>
+  <div class="col-sm-1"></div>
+</div>
+{% endifequal %}
+{% endfor %}
+
+{% for inc in incisos%}
+<div>{{ inc.texto }} ({{ inc.puntaje }} puntos)</div>
+<textarea class="form-control txtarea" name="respuesta{{ inc.id }}" rows="15"></textarea>
+
+{% endfor %}
+
+
+
+

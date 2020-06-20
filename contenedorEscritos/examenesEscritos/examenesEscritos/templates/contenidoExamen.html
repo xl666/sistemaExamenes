@@ -1,0 +1,77 @@
+{% if agregar %}
+<div class="row">
+  <div class="col-sm-9"></div>
+  <div class="col-sm-3 contPen">
+    <a class="pendientes" href="/almacenarPendiente/"><b>Dejar pendiente este ejercicio</b></a>
+  </div>
+</div>
+{% endif %}
+
+{% if error %}
+<div  class="alert  alert-danger alert-dismissable falloTexto">
+  {{ error }}
+</div>
+{% endif %}
+
+{% if pendientes %}
+<div class="row">
+  <div class="col-sm-8"></div>
+  <div class="col-sm-2">
+    Ejercicios pendientes:
+  </div>
+  <div class="col-sm-2">
+    {% for pendiente in pendientes %}
+    <span class="cuadro"><a class="pendientes" href="/regresarPendiente/?indice={{ pendiente }}">{{ pendiente|add:"1" }}</a><span>
+	{% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<div class="row">
+  <div class="col-sm-10"></div>
+  <h5 class="col-sm-2"> <span class="text-info">Preguntas restantes: {{ restantes }}</span></h5>
+</div>
+
+
+<div>
+  <h3>{{ instruccion }}
+    {% if puntos %}
+    ({{puntos}} puntos)
+    {% endif %}
+  </h3> 
+</div>
+
+<div>
+  <h4>{{ texto }}</h4>
+</div>
+
+<form method="post" action="" id="formulario">{% csrf_token %}
+  <fieldset>
+    <legend></legend>
+    
+    {% include template %}
+    <br />
+    <div class="row">
+      <div class="col-sm-5"></div>
+      <div class="col-sm-2">
+	<div class="col-sm-5"></div>
+	<input value="Enviar" id="bsubmit" class="btn btn-primary btn-block" type="submit" />
+      </div>
+    </div>
+  </fieldset>
+</form>
+
+<script src="/static/js/ajaxificar.js"></script>
+<script>
+  
+  $(function() {  
+  $("#bsubmit").hide();
+  setTimeout(function(){ $("#bsubmit").fadeIn(2000); }, 3000);
+
+  //$("#formulario").on("submit", function() {
+    // $("#bsubmit").hide();
+ // })
+  
+});
+
+</script>
