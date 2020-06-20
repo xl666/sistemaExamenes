@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+
+  examenes_escritos:
+    env_file:
+      - settings.env
+    build: ./contenedorEscritos
+    restart: always
+    container_name: examenes_escritos
+    volumes:
+      - ./contenedorEscritos/examenesEscritos:/code
+    depends_on:
+      - bd_examen_escrito
+      
+  bd_examen_escrito:
+    image: mariadb
+    restart: always
+    env_file:
+      - bd.env
+    volumes:
+      - ./contenedorEscritos/data:/var/lib/mysql
+
+

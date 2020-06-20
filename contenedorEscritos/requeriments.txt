@@ -1,0 +1,5 @@
+Django==3.0.2
+mysqlclient==1.4.6
+lxml
+gunicorn==20.0.4
+requests

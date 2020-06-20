@@ -40,7 +40,7 @@ SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.system.environ.get('SECRET_KEY_ESCRITO')
+SECRET_KEY = os.environ.get('SECRET_KEY_ESCRITO')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -99,7 +99,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': os.environ.get('DB_NAME_ESCRITO'),
         'USER': os.environ.get('DB_USER_ESCRITO'),
-        'PASSWORD': os.environ.get('DB_PASSWORD_ESCRITO')
+        'PASSWORD': os.environ.get('DB_PASSWORD_ESCRITO'),
         'HOST': os.environ.get('DB_HOST_ESCRITO'),
         'PORT': os.environ.get('DB_PORT_ESCRITO'),
     }
