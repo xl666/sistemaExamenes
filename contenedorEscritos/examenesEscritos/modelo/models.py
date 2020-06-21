@@ -19,7 +19,6 @@ class Alumnos(models.Model):
     session_key = models.CharField(max_length=40, blank=True, null=True)
 
     class Meta:
-        managed = False
         db_table = 'Alumnos'
 
     def __str__(self):
@@ -41,7 +40,6 @@ class AlumnosEjercicios(models.Model):
         return '%s:%s' % (self.alumnos_idalumno, self.ejercicios_idejercicios)
         
     class Meta:
-        managed = False
         db_table = 'Alumnos_Ejercicios'
 
 
@@ -51,7 +49,6 @@ class AlumnosGrupos(models.Model):
     grupos_idgrupos = models.ForeignKey('Grupos', models.DO_NOTHING, db_column='Grupos_idGrupos')  # Field name made lowercase.
 
     class Meta:
-        managed = False
         db_table = 'Alumnos_Grupos'
 
     def __str__(self):
@@ -65,7 +62,6 @@ class Ejercicios(models.Model):
     examenes_idexamen = models.ForeignKey('Examenes', models.DO_NOTHING, db_column='Examenes_idExamen')  # Field name made lowercase.
 
     class Meta:
-        managed = False
         db_table = 'Ejercicios'
 
     def __str__(self):
@@ -81,7 +77,6 @@ class Examenes(models.Model):
     grupos_idgrupos = models.ForeignKey('Grupos', models.DO_NOTHING, db_column='Grupos_idGrupos')  # Field name made lowercase.
 
     class Meta:
-        managed = False
         db_table = 'Examenes'
 
     def __str__(self):
@@ -95,7 +90,6 @@ class Grupos(models.Model):
 
     nombre = models.CharField(max_length=45, blank=True, null=True)
     class Meta:
-        managed = False
         db_table = 'Grupos'
 
     def __str__(self):

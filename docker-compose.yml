@@ -12,6 +12,8 @@ services:
       - ./contenedorEscritos/examenesEscritos:/code
     depends_on:
       - bd_examen_escrito
+    ports:
+      - 8000:8000
       
   bd_examen_escrito:
     image: mariadb
