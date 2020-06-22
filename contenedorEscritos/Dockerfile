@@ -13,12 +13,16 @@ ENV DB_PASSWORD_ESCRITO=""
 ENV DB_HOST_ESCRITO=""
 ENV DB_PORT_ESCRITO=3306
 ENV PATH_PREFIX=""
+ENV BOT_TOKEN=""
+ENV BOT_CHATID=""
 
 RUN mkdir /code
 RUN mkdir /start
+RUN mkdir /monitor
 
 COPY ./run.sh /start
 RUN chmod 751 /start/run.sh
+COPY ./monitor.py /monitor
 
 WORKDIR /code
 
