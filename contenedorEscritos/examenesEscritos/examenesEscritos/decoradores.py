@@ -20,7 +20,7 @@ def examenActivo(fun):
 def logueado(fun):
     def interna(request, *args, **kargs):        
         if not request.session.get('logueado', False):
-            return redirect('/login/')
+            return redirect('login')
         return fun(request, *args, **kargs)
 
     return interna

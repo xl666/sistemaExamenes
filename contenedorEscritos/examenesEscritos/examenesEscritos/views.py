@@ -73,7 +73,7 @@ def login(request):
         alumno.session_key = request.session.session_key
         alumno.logueado = 1
         alumno.save()
-        return redirect('/examen/')
+        return redirect('examen')
 
 
 def calcularRestantes(examen, pendientes):
@@ -205,7 +205,7 @@ def examen(request):
 
     examen = request.session.get('examen', None)
     if not examen:  # error fatal, no deberia ser posible
-        redirect('/login/')
+        redirect('login')
     contexto = {}
     plantilla = ''
     nombreAlumno = request.session.get('nombre', 'anonimo')
@@ -278,20 +278,20 @@ def almacenarPendiente(request):
     if request.method == 'GET':
         if not examen.orden:
             request.session['error'] = 'Ya no es posible agregar más ejercicios pendientes'
-            return redirect('/examen/') #mientras haya aleatorias se puede hacer
+            return redirect('examen') #mientras haya aleatorias se puede hacer
         pendientes = request.session.get('pendientes', [])
         if len(pendientes) >= settings.MAX_PENDIENTES: #ya no se puede
             request.session['error'] = 'Ya no puedes agregar más ejercicios pendientes, el máximo es %s' % settings.MAX_PENDIENTES
-            return redirect('/examen/')
+            return redirect('examen')
         pendientes.append(examen.orden[0])
         del(examen.orden[0])
         request.session['examen'] = examen # force sync
         request.session['pendientes'] = pendientes
-        return redirect('/examen/')
+        return redirect('examen')
         
 def regresarPendiente(request):
     if request.method == 'POST':
-        return redirect('/examen/')
+        return redirect('examen')
     indice = request.GET.get('indice', -1)
     examen = request.session.get('examen', None)
     pendientes = request.session.get('pendientes', [])
@@ -302,4 +302,4 @@ def regresarPendiente(request):
         request.session['examen'] = examen # force sync
         request.session['pendientes'] = pendientes
 
-    return redirect('/examen/')
+    return redirect('examen')

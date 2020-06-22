@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 
 <html>
@@ -6,10 +8,10 @@
     <title>{% block titulo %}{% endblock %}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" href="/static/css/base.css"/>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}"/>
     {% block estilos %}{% endblock %}
-    <script src="/static/js/jquery.min.js"></script>
-    <script src="/static/js/jquery.form.min.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery.form.min.js' %}" crossorigin="anonymous"></script>
 
     <script>
       $(document).keydown(function(event) {
@@ -43,10 +45,10 @@ $(window).bind('mousewheel DOMMouseScroll', function (event) {
       
       document.oncontextmenu = function() { return false; };
       $(window).blur(function(){
-      $.get("/monitoreo/?caso=cambió")
+      $.get("{% url 'monitoreo' %}?caso=cambió")
       });
       $(window).focus(function(){
-      $.get("/monitoreo/?caso=regresó")
+      $.get("{% url 'monitoreo' %}?caso=regresó")
 });
       });
 

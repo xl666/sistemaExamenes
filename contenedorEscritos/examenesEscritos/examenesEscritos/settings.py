@@ -21,7 +21,9 @@ HOST_MONITOR = 'localhost' # host del servicio de monitoreo de cambio de ventana
 
 PUERTO_MONITOR = 9030 # para monitoreo cuando cambian d eventana
 
-
+PATH_PREFIX = os.environ.get('PATH_PREFIX', '')
+if PATH_PREFIX and not PATH_PREFIX.endswith('/'):
+    PATH_PREFIX += '/'
 
 ID_EXAMEN = 1
 
@@ -145,6 +147,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+if PATH_PREFIX:
+    STATIC_URL = f'/{PATH_PREFIX}static/'
+
 STATICFILES_DIRS = (
     #os.path.join(os.path.dirname(__file__), 'static').replace('\\', '/'),
     os.path.join(BASE_DIR, "static"),
