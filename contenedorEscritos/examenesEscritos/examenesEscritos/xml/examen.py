@@ -3,12 +3,12 @@ Modulo para integrar un examen
 """
 
 from lxml import etree
-from xml.subrayar import Subrayar
-from xml.verdaderoFalso import VerdaderoFalso
-from xml.abiertas import Abiertas
-from xml.misc import Misc
-from xml.analisis import Analisis
-from xml.relacionar import Relacionar
+from examenesEscritos.xml.subrayar import Subrayar
+from examenesEscritos.xml.verdaderoFalso import VerdaderoFalso
+from examenesEscritos.xml.abiertas import Abiertas
+from examenesEscritos.xml.misc import Misc
+from examenesEscritos.xml.analisis import Analisis
+from examenesEscritos.xml.relacionar import Relacionar
 import random
 
 class Examen():

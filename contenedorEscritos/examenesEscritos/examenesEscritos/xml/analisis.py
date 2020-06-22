@@ -1,6 +1,6 @@
 
 
-from xml.baseVariado import BaseVariado
+from examenesEscritos.xml.baseVariado import BaseVariado
 
                        
         

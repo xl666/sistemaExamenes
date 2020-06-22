@@ -7,8 +7,8 @@ from django.contrib.sessions.models import Session
 from django.template import RequestContext, loader
 from django.http import HttpResponse
 from django.shortcuts import redirect
-import xml.examen
-import xml.subrayar
+import examenesEscritos.xml.examen 
+import examenesEscritos.xml.subrayar
 from examenesEscritos import settings
 import datetime
 import socket
@@ -64,7 +64,7 @@ def login(request):
             antigua.delete()
         
         if not alumno.session_key: # primer logueo generar examen
-            ex = xml.examen.Examen(settings.XML)
+            ex = examenesEscritos.xml.examen.Examen(settings.XML)
             request.session['examen'] = ex
             request.session['pendientes'] = []
 
@@ -186,7 +186,7 @@ def procesarAleatoria(respuesta, examen, request):
     alEj.respuesta = respuesta
     if etiquetaSec == 'subrayar':
         respuesta = int(respuesta)
-        alEj.respuesta = xml.subrayar.descifrar(respuesta, examen.clave)
+        alEj.respuesta = examenesEscritos.xml.subrayar.descifrar(respuesta, examen.clave)
         alEj.calificado = 1
         if int(inciso.correcto) == respuesta: # bien Contestado
             alEj.puntosobtenidos = seccion.puntajeUnitario

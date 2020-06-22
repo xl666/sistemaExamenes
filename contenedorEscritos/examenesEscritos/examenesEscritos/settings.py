@@ -26,7 +26,7 @@ PUERTO_MONITOR = 9030 # para monitoreo cuando cambian d eventana
 ID_EXAMEN = 1
 
 
-#XML = f'{BASE_DIR}/ejemploConIds.xml' # prueba
+XML = f'{BASE_DIR}/ejemploConIds.xml' # prueba
 
 
 
@@ -43,7 +43,7 @@ SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
 SECRET_KEY = os.environ.get('SECRET_KEY_ESCRITO')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*', '192.168.12.1', 'localhost']
 

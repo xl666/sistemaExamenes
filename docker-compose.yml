@@ -5,6 +5,8 @@ services:
   examenes_escritos:
     env_file:
       - settings.env
+    environment:
+      PATH_PREFIX: examenesEscritos
     build: ./contenedorEscritos
     restart: always
     container_name: examenes_escritos
@@ -12,8 +14,6 @@ services:
       - ./contenedorEscritos/examenesEscritos:/code
     depends_on:
       - bd_examen_escrito
-    ports:
-      - 8000:8000
       
   bd_examen_escrito:
     image: mariadb
@@ -24,3 +24,15 @@ services:
       - ./contenedorEscritos/data:/var/lib/mysql
 
 
+  nginx_examen_escrito:
+    image: nginx
+    restart: always
+    volumes:
+      - ./contenedorEscritos/nginx/templates:/etc/nginx/templates
+      - ./contenedorEscritos/examenesEscritos/static:/static
+    depends_on:
+      - examenes_escritos
+    ports:
+      - 8000:80
+    environment:
+      PATH_PREFIX: examenesEscritos
