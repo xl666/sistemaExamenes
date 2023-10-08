@@ -28,7 +28,9 @@ if PATH_PREFIX and not PATH_PREFIX.endswith('/'):
 ID_EXAMEN = 1
 
 
-XML = f'{BASE_DIR}/ejemploConIds.xml' # prueba
+
+XML = f'{BASE_DIR}/xmls/ejemploConIds.xml'
+#XML = f'{BASE_DIR}/grupos/progAdmon22/tituloIds.xml'
 
 
 

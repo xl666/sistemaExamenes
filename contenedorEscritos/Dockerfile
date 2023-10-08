@@ -29,5 +29,8 @@ WORKDIR /code
 RUN useradd -s /bin/bash limitado
 
 RUN chown -R limitado /code
+RUN chown -R limitado /start
+
+USER limitado
 
 CMD /start/run.sh
